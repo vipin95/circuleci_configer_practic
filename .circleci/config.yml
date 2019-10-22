@@ -15,4 +15,4 @@ jobs:
       - checkout
       - run : npm install
       - run : echo test
-      - run : console.log("done");
+      - run : console.log("done")
