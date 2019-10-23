@@ -18,5 +18,5 @@ jobs:
       - run : git add .
       - run : git commit -am "make it better"
       - run : git config --global user.email "mavi.mymail@gmail.com"
-      - run : git config --global user.name "vipin95"
+      - run : git config --global user.name "vipin mavi"
       - run : git push heroku master
