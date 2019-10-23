@@ -16,7 +16,7 @@ jobs:
       - run : npm install
       - run : echo test
       - run : git add .
-      - run : git commit -am "make it better"
       - run : git config --global user.email "mavi.mymail@gmail.com"
       - run : git config --global user.name "vipin mavi"
+      - run : git commit -am "make it better"
       - run : git push heroku master
