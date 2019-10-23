@@ -20,5 +20,5 @@ jobs:
       - run : git config --global user.name "vipin mavi"
       - run : git commit -am "make it better"
       # - run : git remote rm heroku
-      - run : git remote add heroku https://git.heroku.com/testvipin95.git
-      - run : git push heroku master
+      # - run : git remote add heroku https://git.heroku.com/testvipin95.git
+      - run : git push https://git.heroku.com/testvipin95.git master
