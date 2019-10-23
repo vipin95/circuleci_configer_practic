@@ -2,7 +2,8 @@ const express = require("express");
 const app = express();
 const engine = require("ejs-locals");
 const login_form = require('./route/login_form');
-const PORT = 8080;
+require('dotenv').config();
+const PORT = process.env.PORT || 8080;
 
 app.use(express.static("./"));
 app.engine('ejs', engine);
