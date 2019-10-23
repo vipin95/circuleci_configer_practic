@@ -15,6 +15,6 @@ jobs:
       - checkout
       - run : npm install
       - run : echo test
-      - run : git add .
-      - run : git commit -m "uploading changes on heroku"
-      - run : git push heroku master
+      # - run : git add .
+      # - run : git commit -m "uploading changes on heroku"
+      # - run : git push heroku master
