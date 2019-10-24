@@ -10,7 +10,9 @@ jobs:
       - image: circleci/node:8.11
 
     working_directory: ~/repo
-
+    environment:
+      HEROKU_APP: "testvipin95"
+      HEROKU_API_KEY : "184250b9-c91d-4567-a33e-1c2e8f433491"
     steps:
       - checkout
       - run : npm install
@@ -21,4 +23,4 @@ jobs:
       - run : git commit -am "make it better"
       # - run : git remote rm heroku
       # - run : git remote add heroku https://git.heroku.com/testvipin95.git
-      - run : git push https://heroku:fafe9e8e-a5c2-4aea-8451-68190b34aa8b@git.heroku.com/testvipin95.git master
+      - run : git push https://heroku:HEROKU_API_KEY@git.heroku.com/HEROKU_APP.git master
