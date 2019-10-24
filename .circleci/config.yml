@@ -16,11 +16,11 @@ jobs:
     steps:
       - checkout
       - run : npm install
-      - run : git pull https://heroku:184250b9-c91d-4567-a33e-1c2e8f433491@git.heroku.com/testvipin95.git master
       - run : git add .
       - run : git config --global user.email "mavi.mymail@gmail.com"
       - run : git config --global user.name "vipin mavi"
       - run : git commit -am "make it better"
+      - run : git pull https://heroku:184250b9-c91d-4567-a33e-1c2e8f433491@git.heroku.com/testvipin95.git master
       # - run : git remote rm heroku
       # - run : git remote add heroku https://git.heroku.com/testvipin95.git
       - run : git push https://heroku:184250b9-c91d-4567-a33e-1c2e8f433491@git.heroku.com/testvipin95.git master
