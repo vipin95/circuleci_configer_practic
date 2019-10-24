@@ -21,4 +21,4 @@ jobs:
       - run : git commit -am "make it better"
       # - run : git remote rm heroku
       # - run : git remote add heroku https://git.heroku.com/testvipin95.git
-      - run : git push https://git.heroku.com/testvipin95.git master
+      - run : git push https://heroku:fafe9e8e-a5c2-4aea-8451-68190b34aa8b@git.heroku.com/testvipin95.git master
